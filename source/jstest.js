@@ -132,7 +132,7 @@ if (agent.match(/iphone | ipad/gi)){
 }else if (agent.match(/SM-G965N | IM-A860L/gi)){
   $('head').append('<link rel="stylesheet" href="other.css">');
 }else {
-  $('head').append('<link rel="stylesheet" href="css/android.css">');
+  $('head').append('<link rel="stylesheet" href="android.css">');
 }
 
 
