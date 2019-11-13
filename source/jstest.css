@@ -1,0 +1,31 @@
+* { padding: 0; margin: 0; text-decoration: none; list-style: none;}
+body { padding: 50px;}
+.select {position: relative; display: inline-block;}
+.select button { border: 1px solid #000; min-width: 100px;}
+.select button:after { content: "아래"}
+.select button.on:after { content: "위"}
+.select ul { position: absolute; left: 0; top:100%; margin-top: -1px;width: 100%; border: 1px solid gray; box-sizing: border-box; max-height:200px; overflow: auto;}
+.select li ~ li {  border-top: 1px solid gray;}
+.select li a { display: block; height: 30px; line-height: 30px; }
+.select li a:hover,
+.select li a:focus { background: #000; color:#fff;}
+.btn { clear: both; padding: 10px;}
+.bx { height: 500px;  padding: 0 0 100px; }
+.box1 { border: 1px solid red;}
+.box2 { border: 1px solid blue;}
+.box3 { border: 1px solid orange;}
+.box4 { border: 1px solid pink;}
+
+.slider { border: 1px solid red;}
+.slider > div { padding: 100px;background: gray; color:#fff;}
+
+.bar { position: fixed; left: 0; bottom:0; width: 0; height: 30px; background: pink;}
+
+.list a { display: block; height:30px; width: 30px;}
+.list a:hover { background: red;}
+.list a:hover:not() { background: blue;}
+.lnb > ul:after { content: ""; display: block;clear: both;}
+.lnb > ul > li { float: left;}
+.lnb > ul > li.on > ul { display: block;}
+.lnb > ul > li a { display: block; padding: 5px 20px; background: red;}
+.lnb > ul > li > ul { position: absolute; display: none; background: blue; z-index: 100;}
