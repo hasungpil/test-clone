@@ -129,10 +129,12 @@ $(window).on('scroll', function(){
 if (agent.match(/iPhone | ipad/gi)){
   $('head').append('<link rel="stylesheet" href="ios.css">');
 
-}else if (agent.match(/SM-G965N | SM-G973N/gi)){
-  $('head').append('<link rel="stylesheet" href="other.css">');
-}else {
-  $('head').append('<link rel="stylesheet" href="android.css">');
+}else if (agent.match(/Android/gi)){
+  if (agent.match(/SM-G965N | SM-G973N/gi)){
+    $('head').append('<link rel="stylesheet" href="other.css">');
+  }else{
+    $('head').append('<link rel="stylesheet" href="android.css">');
+  }
 }
 
 
