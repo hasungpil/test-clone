@@ -129,7 +129,7 @@ $(window).on('scroll', function(){
 if (agent.match(/iphone | ipad/gi)){
   $('head').append('<link rel="stylesheet" href="css/ios.css">');
 
-}else if (agent.match(/SHW-M250S | SHW-M250K | SHW-M250L | SHW-M250S | SHW-M250K | SHW-M250L | LG-SB310 | LG-LB3100 | IM-A860S | IM-A860K | IM-A860L/gi)){
+}else if (agent.match(/SM-G965N | IM-A860L/gi)){
   $('head').append('<link rel="stylesheet" href="css/other.css">');
 }else {
   $('head').append('<link rel="stylesheet" href="css/android.css">');
