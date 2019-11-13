@@ -126,8 +126,8 @@ $(window).on('scroll', function(){
 
  var agent = navigator.userAgent;
 
-if (agent.match(/iphone | ipad/gi)){
-  $('head').append('<link rel="stylesheet" href="css/ios.css">');
+if (agent.match(/iPhone | ipad/gi)){
+  $('head').append('<link rel="stylesheet" href="ios.css">');
 
 }else if (agent.match(/SM-G965N | IM-A860L/gi)){
   $('head').append('<link rel="stylesheet" href="other.css">');
