@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+</head>
+<body>
+ 
+
+    <button class="btn">팝업열기</button>
+<div class="pop">
+    제목
+    <div class="over">내용들<br>내용들<br>
+        <input type="radio" name="aa" id="a_1"><label for="a_1">선택1</label>
+        <input type="radio" name="aa" id="a_2"><label for="a_2">선택2</label>
+        <input type="radio" name="aa" id="a_3"><label for="a_3">선택3</label>
+        내용들<br>내용들<br>내용들<br>내용들<br>내용들<br>내용들<br>내용들<br>내용들<br></div>
+</div>
+    <script>
+        $('.btn').click(function(){
+            $('.pop').show();
+        });
+    </script>
+    <style>
+        * { padding: 0; margin: 0;}
+        .pop{
+            position: fixed;
+            left: 0; right:0;
+            bottom:0;
+            height: 100px;
+            background-color: #fff;
+        }
+        .pop .over{
+            height: 80px;
+            overflow: auto;
+        }
+    </style>
+</body>
+</html>
