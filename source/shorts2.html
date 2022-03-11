@@ -23,6 +23,7 @@
     <script>
         $('.btn').click(function(){
             $('.pop').show();
+            $('body').addClass('dd');
         });
     </script>
     <style>
@@ -43,6 +44,9 @@
         }
         body {
             font-size: 40px;
+        }
+        body.dd{
+            overflow: hidden;
         }
     </style>
 </body>
