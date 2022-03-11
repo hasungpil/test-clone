@@ -29,16 +29,20 @@
         * { padding: 0; margin: 0;}
         .pop{
             display: none;
-            position: fixed;
-            left: 0; right:0;
-            border:1px solid red;
-            bottom:0;
+            position: fixed;border:1px solid red;            bottom:0;
             height: 100px;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
             background-color: #fff;
+            font-size: 20px;
         }
         .pop .over{
             height: 80px;
             overflow: auto;
+        }
+        body {
+            font-size: 40px;
         }
     </style>
 </body>
