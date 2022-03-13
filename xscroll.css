@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+    width:1px;
+    height: 1px;
+}
+::-webkit-scrollbar-button{
+    width:1px;
+    height:1px;
+}
+.container {
+    border:2px solid red;
+    width:100px;
+    height:300px;
+    box-sizing:border-box;
+    transform: rotate(-90deg) translateY(-100px);
+    transform-origin: right top;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.container div {
+    width:100px;
+    height:100px;
+    padding:5px;
+    border:2px solid blue;
+    box-sizing:border-box;
+    transform: rotate(90deg) translateX(100px);
+    transform-origin: right top;
+}
